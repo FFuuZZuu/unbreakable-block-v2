@@ -30,8 +30,8 @@ namespace UnbreakableBlockV2.Items.Placeable
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            // Ingredients: 1 Cell Phone + 15 x Nebula, Solar, Stardust and Vortex fragments
-            recipe.AddIngredient(ItemID.CellPhone);
+            // Ingredients: 5 Player Above Logic Sensors + 15 x Nebula, Solar, Stardust and Vortex fragments
+            recipe.AddIngredient(ItemID.LogicSensor_Above, 5);
             recipe.AddIngredient(ItemID.FragmentNebula, 15);
             recipe.AddIngredient(ItemID.FragmentSolar, 15);
             recipe.AddIngredient(ItemID.FragmentStardust, 15);
