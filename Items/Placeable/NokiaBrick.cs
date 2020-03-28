@@ -1,5 +1,4 @@
-﻿using Terraria;
-using Terraria.ID;
+﻿using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace UnbreakableBlockV2.Items.Placeable
@@ -17,7 +16,7 @@ namespace UnbreakableBlockV2.Items.Placeable
             item.width = 1;
             item.height = 1;
             item.maxStack = 999;
-            item.rare = 13;
+            item.rare = 13; // Expert
             item.useStyle = 1;
             item.useTime = 10;
             item.useAnimation = 10;
