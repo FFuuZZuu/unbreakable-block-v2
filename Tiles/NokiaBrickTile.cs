@@ -15,7 +15,7 @@ namespace UnbreakableBlockV2.Tiles
 
             AddMapEntry(new Color(79, 79, 79));
 
-            minPick = 300;
+            minPick = 30000;
 
         }
     }

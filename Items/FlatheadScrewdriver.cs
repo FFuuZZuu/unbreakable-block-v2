@@ -24,7 +24,7 @@ namespace UnbreakableBlockV2.Items
 			item.value = 10000;
 			item.rare = 13;
 			item.autoReuse = true;
-			item.pick = 300;
+			item.pick = 30000;
 		}
 
 		public override void AddRecipes()
