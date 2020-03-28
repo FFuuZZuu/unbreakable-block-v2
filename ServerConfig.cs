@@ -8,6 +8,7 @@ namespace UnbreakableBlockV2
         [DefaultValue(true)]
         [Label("Screwdriver Recipe")]
         [Tooltip("Should the screwdriver recipe be craftable?")]
+        [ReloadRequired]
         public bool ScrewdriverRecipe { get; set; }
 
         public override ConfigScope Mode => ConfigScope.ServerSide;
