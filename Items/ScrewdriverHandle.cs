@@ -24,15 +24,18 @@ namespace UnbreakableBlockV2.Items
         }
         public override void AddRecipes()
         {
-            ModRecipe recipe = new ModRecipe(mod);
-            // Recipe: 15 plastic, orange dye
-            recipe.AddIngredient(mod, "Plastic", 15);
-            recipe.AddIngredient(ItemID.OrangeDye);
-            // Made at: Anvil
-            recipe.AddTile(TileID.Anvils);
-            // Makes: 1 screwdriver handle
-            recipe.SetResult(this);
-            recipe.AddRecipe();
+            if (Config.screwdriverRecipe)
+            {
+                ModRecipe recipe = new ModRecipe(mod);
+                // Recipe: 15 plastic, orange dye
+                recipe.AddIngredient(mod, "Plastic", 15);
+                recipe.AddIngredient(ItemID.OrangeDye);
+                // Made at: Anvil
+                recipe.AddTile(TileID.Anvils);
+                // Makes: 1 screwdriver handle
+                recipe.SetResult(this);
+                recipe.AddRecipe();
+            }
         }
     }
 }

@@ -29,15 +29,18 @@ namespace UnbreakableBlockV2.Items
 
 		public override void AddRecipes()
 		{
-			ModRecipe recipe = new ModRecipe(mod);
-			// Recipe: Screwdriver Handle + Screwdriver Head
-			recipe.AddIngredient(mod, "ScrewdriverHandle");
-			recipe.AddIngredient(mod, "ScrewdriverHead");
-			// Made at: Tinkerers Workbench
-			recipe.AddTile(TileID.TinkerersWorkbench);
-			// Makes: Flat-Headed Screwdriver
-			recipe.SetResult(this);
-			recipe.AddRecipe();
+			if (Config.screwdriverRecipe)
+			{
+				ModRecipe recipe = new ModRecipe(mod);
+				// Recipe: Screwdriver Handle + Screwdriver Head
+				recipe.AddIngredient(mod, "ScrewdriverHandle");
+				recipe.AddIngredient(mod, "ScrewdriverHead");
+				// Made at: Tinkerers Workbench
+				recipe.AddTile(TileID.TinkerersWorkbench);
+				// Makes: Flat-Headed Screwdriver
+				recipe.SetResult(this);
+				recipe.AddRecipe();
+			}
 		}
 	}
 }

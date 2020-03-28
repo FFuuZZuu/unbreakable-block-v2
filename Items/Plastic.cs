@@ -22,15 +22,18 @@ namespace UnbreakableBlockV2.Items
 
         public override void AddRecipes()
         {
-            ModRecipe recipe = new ModRecipe(mod);
-            // Recipe: 20 Gel + 10 Bees Wax
-            recipe.AddIngredient(ItemID.Gel, 20);
-            recipe.AddIngredient(ItemID.BeeWax, 10);
-            // Made at: Furnace
-            recipe.AddTile(TileID.Furnaces);
-            // Makes: 20 Plastic
-            recipe.SetResult(this, 20);
-            recipe.AddRecipe();
+            if (Config.screwdriverRecipe)
+            {
+                ModRecipe recipe = new ModRecipe(mod);
+                // Recipe: 20 Gel + 10 Bees Wax
+                recipe.AddIngredient(ItemID.Gel, 20);
+                recipe.AddIngredient(ItemID.BeeWax, 10);
+                // Made at: Furnace
+                recipe.AddTile(TileID.Furnaces);
+                // Makes: 20 Plastic
+                recipe.SetResult(this, 20);
+                recipe.AddRecipe();
+            }
         }
     }
 }

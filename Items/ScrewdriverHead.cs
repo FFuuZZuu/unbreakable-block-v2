@@ -24,15 +24,18 @@ namespace UnbreakableBlockV2.Items
         }
         public override void AddRecipes()
         {
-            ModRecipe recipe = new ModRecipe(mod);
-            // Recipe: Last Prism + 35 Luminite Bars
-            recipe.AddIngredient(ItemID.LastPrism);
-            recipe.AddIngredient(ItemID.LunarBar, 35);
-            // Made At: Ancient Manipulator
-            recipe.AddTile(TileID.LunarCraftingStation);
-            // Makes: 1 Screwdriver Head
-            recipe.SetResult(this);
-            recipe.AddRecipe();
+            if (Config.screwdriverRecipe)
+            {
+                ModRecipe recipe = new ModRecipe(mod);
+                // Recipe: Last Prism + 35 Luminite Bars
+                recipe.AddIngredient(ItemID.LastPrism);
+                recipe.AddIngredient(ItemID.LunarBar, 35);
+                // Made At: Ancient Manipulator
+                recipe.AddTile(TileID.LunarCraftingStation);
+                // Makes: 1 Screwdriver Head
+                recipe.SetResult(this);
+                recipe.AddRecipe();
+            }
         }
     }
 }
