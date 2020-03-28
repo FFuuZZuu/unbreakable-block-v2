@@ -4,13 +4,10 @@ namespace UnbreakableBlockV2
 {
 	public class UnbreakableBlockV2 : Mod
 	{
+		public static ServerConfig serverConfig;
+
 		public UnbreakableBlockV2()
 		{
-		}
-
-		public override void Load()
-		{
-			Config.Load();
 		}
 	}
 }

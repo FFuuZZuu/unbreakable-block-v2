@@ -24,7 +24,7 @@ namespace UnbreakableBlockV2.Items
         }
         public override void AddRecipes()
         {
-            if (Config.screwdriverRecipe)
+            if (UnbreakableBlockV2.serverConfig.ScrewdriverRecipe)
             {
                 ModRecipe recipe = new ModRecipe(mod);
                 // Recipe: Last Prism + 35 Luminite Bars

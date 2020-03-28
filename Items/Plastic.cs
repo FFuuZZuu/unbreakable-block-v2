@@ -22,7 +22,8 @@ namespace UnbreakableBlockV2.Items
 
         public override void AddRecipes()
         {
-            if (Config.screwdriverRecipe)
+            if (UnbreakableBlockV2.serverConfig.ScrewdriverRecipe)
+            if (UnbreakableBlockV2.serverConfig.ScrewdriverRecipe)
             {
                 ModRecipe recipe = new ModRecipe(mod);
                 // Recipe: 20 Gel + 10 Bees Wax
