@@ -15,3 +15,7 @@ Features:
 ~ Flat-headed screwdriver, the pickaxe used to break Nokia Bricks, very powerful.
 
 ~ Plastic, a material used in the production of the screwdriver handle, made with 20 gel and 10 bee's wax.
+
+Github:
+
+Please visit the Github link below to make suggestions and report issues!
