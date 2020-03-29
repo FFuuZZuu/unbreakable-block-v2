@@ -16,6 +16,14 @@ Features:
 
 ~ Plastic, a material used in the production of the screwdriver handle, made with 20 gel and 10 bee's wax.
 
+
+Patch Notes:
+
+v1.1 - Added Icon
+
+v1.2 - Updated Plastic Icon
+
+
 Github:
 
 Please visit the Github link below to make suggestions and report issues!
